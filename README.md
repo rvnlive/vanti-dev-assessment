@@ -1,7 +1,7 @@
 # Technical Assessment: Front End Developer
 
 This assessment helps Vanti to hire people suited for the role of **Front End Developer**. As part of this role you will
-be developing user interfaces using Vue.js that integrate with backend systems via APIs. An polished and responsive user
+be developing user interfaces using Vue.js that integrate with backend systems via APIs. A polished and responsive user
 experience is key.
 
 This assessment provides a sample application that presents occupancy statistics for a fictional building. This is
@@ -10,8 +10,8 @@ features to the application to improve the utility and user experience.
 
 Outside of the technical requirements listed, we place no limits on how you want to deliver this solution. One of the
 things we are hoping to extract from your evaluation is an idea of what a good solution looks like to you. As this is a
-front end role an attention to detail is expected, but we aren't going to penalise the odd spelling mistake or
-duplicated code. These things happen.
+front end role, an attention to detail is expected but we aren't going to penalise the odd spelling mistake or
+duplicated code. These things happen and we are aware that interviews and assessments add extra pressure.
 
 When solving the below tasks try to break your work down into small changes and commit these into Git independently. The
 Git history really helps us to understand how you approach problem solving. Don't worry if you commit something you wish
