@@ -28,7 +28,7 @@ router.beforeResolve((to, from, next) => {
   const modifiedRecords = useModifiedRecords()
 
   // if URL has a filter query, store the query param in Pinia
-  if (to.query.hasOwnProperty('filter')) modifiedRecords.sidebarSelection = to.query.filter
+  if (to.query.hasOwnProperty('filter')) modifiedRecords.sidebarSelection = to.query.filter.replace('_', ' ')
   else router.push({ path: '/', query: { filter: 'All' } })
 
   next()
