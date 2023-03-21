@@ -9,10 +9,18 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-const sidebarSelection = ref('All')
+import { computed, watch } from 'vue'
+import { storeToRefs } from 'pinia'
+
+import { useRecords } from '@/occupancy/records'
+import { useModifiedRecords } from '@/occupancy/modifiedRecords'
+
+const records = useRecords()
+const { sidebarSelection } = storeToRefs(useModifiedRecords())
 
 const floors = computed(() => {
-  return ['Example', 'All'].sort()
+  return [...records.floors, 'All'].sort()
 })
+
+watch(sidebarSelection, () => useModifiedRecords().filterRecord())
 </script>
