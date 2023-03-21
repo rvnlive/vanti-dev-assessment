@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="d-flex flex-row">
-    <v-col cols="2" class="my-auto">
+    <v-col cols="2">
       <occupancy-filter-sidebar />
     </v-col>
     <v-col cols="10">
